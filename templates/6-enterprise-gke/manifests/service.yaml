@@ -13,12 +13,19 @@
 # limitations under the License.
 
 apiVersion: v1
-kind: ConfigMap
+kind: Service
 metadata:
-  labels:
-    template: 6-enterprise-gke
-  name: config-6
+  name: workload-6
   namespace: workload-6
-data:
-  LOG_LEVEL: "info"
-  ENVIRONMENT: "production"
+  labels:
+    template: templates/6-enterprise-gke
+    app.kubernetes.io/name: workload-6
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 8080
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    app.kubernetes.io/name: workload-6

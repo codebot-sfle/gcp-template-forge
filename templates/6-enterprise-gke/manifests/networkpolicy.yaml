@@ -12,9 +12,27 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-apiVersion: v1
-kind: Namespace
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
 metadata:
-  name: workload-6
   labels:
-    template: 6-enterprise-gke
+    template: templates/6-enterprise-gke
+  name: workload-6-netpol
+  namespace: workload-6
+spec:
+  podSelector:
+    matchLabels:
+      app.kubernetes.io/name: workload-6
+  policyTypes:
+    - Ingress
+    - Egress
+  ingress:
+    - from:
+        - podSelector: {}
+      ports:
+        - protocol: TCP
+          port: 8080
+  egress:
+    - to:
+        - ipBlock:
+            cidr: 0.0.0.0/0

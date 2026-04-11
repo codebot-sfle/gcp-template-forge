@@ -13,19 +13,8 @@
 # limitations under the License.
 
 apiVersion: v1
-kind: Service
+kind: Namespace
 metadata:
   name: workload-6
-  namespace: workload-6
   labels:
-    template: 6-enterprise-gke
-    app.kubernetes.io/name: workload-6
-spec:
-  type: LoadBalancer
-  ports:
-    - port: 8080
-      targetPort: http
-      protocol: TCP
-      name: http
-  selector:
-    app.kubernetes.io/name: workload-6
+    template: templates/6-enterprise-gke

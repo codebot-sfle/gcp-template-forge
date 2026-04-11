@@ -26,9 +26,9 @@ data "google_client_config" "default" {}
 
 provider "helm" {
   kubernetes {
-    host                   = "https://${google_container_cluster.enterprise_cluster.endpoint}"
+    host                   = "https://${google_container_cluster.main.endpoint}"
     token                  = data.google_client_config.default.access_token
-    cluster_ca_certificate = base64decode(google_container_cluster.enterprise_cluster.master_auth[0].cluster_ca_certificate)
+    cluster_ca_certificate = base64decode(google_container_cluster.main.master_auth[0].cluster_ca_certificate)
   }
 }
 
@@ -77,15 +77,14 @@ resource "google_compute_router_nat" "nat" {
   }
 }
 
-resource "google_container_cluster" "enterprise_cluster" {
+resource "google_container_cluster" "main" {
   name     = var.cluster_name
   location = var.region
 
-  # MANDATORY for CI to be able to destroy
-  deletion_protection = false
+  deletion_protection = false # MANDATORY for CI to be able to destroy
 
   resource_labels = {
-    template = "6-enterprise-gke"
+    template = "templates/6-enterprise-gke"
   }
 
   remove_default_node_pool = true
@@ -147,7 +146,7 @@ resource "google_container_cluster" "enterprise_cluster" {
 resource "google_container_node_pool" "primary_nodes" {
   name       = "pool-issue-${var.issue_number}"
   location   = var.region
-  cluster    = google_container_cluster.enterprise_cluster.name
+  cluster    = google_container_cluster.main.name
   node_count = 1
 
   node_config {
@@ -175,7 +174,7 @@ resource "google_container_node_pool" "primary_nodes" {
     }
 
     labels = {
-      template = "6-enterprise-gke"
+      template = "templates/6-enterprise-gke"
     }
   }
 }
@@ -201,7 +200,7 @@ resource "helm_release" "workload" {
   depends_on       = [google_container_node_pool.primary_nodes]
 
   values = [
-    file("${path.module}/workload/values.yaml")
+    file("${path.module}/values.yaml")
   ]
 
   set {
