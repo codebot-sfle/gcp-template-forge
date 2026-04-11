@@ -103,7 +103,7 @@ resource "google_container_cluster" "enterprise_cluster" {
   private_cluster_config {
     enable_private_nodes    = true
     enable_private_endpoint = false
-    master_ipv4_cidr_block  = "172.16.${var.issue_number + 100}.0/28"
+    master_ipv4_cidr_block  = "172.17.${var.issue_number}.0/28"
   }
 
   workload_identity_config {

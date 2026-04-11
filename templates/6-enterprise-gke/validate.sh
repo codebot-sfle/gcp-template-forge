@@ -1,4 +1,18 @@
 #!/usr/bin/env bash
+# Copyright 2026 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
 set -e
 
 echo "Starting KCC Validation Tests..."
@@ -36,7 +50,7 @@ echo "Test 3: Workload Identity Integration..."
 gcloud container clusters get-credentials ${CLUSTER_NAME} --region ${REGION} --project ${PROJECT_ID}
 
 # Apply namespace first
-kubectl apply -f manifests/namespace.yaml
+kubectl apply -f config-connector/workload/namespace.yaml
 
 cat <<EOF | kubectl apply -f -
 apiVersion: batch/v1
@@ -67,7 +81,7 @@ echo "Test 4: Endpoint Interaction..."
 
 # Apply workload manifests to the target cluster
 echo "Applying workload manifests to target cluster..."
-kubectl apply -R -f manifests/
+kubectl apply -R -f config-connector/workload/
 
 # Wait for rollout
 kubectl rollout status deployment/workload-6 -n ${NAMESPACE_WORKLOAD} --timeout=5m
@@ -106,7 +120,7 @@ done
 # 5. Teardown Verification
 echo "Test 5: Teardown Verification..."
 # Delete workload from target cluster
-kubectl delete -R -f manifests/ --ignore-not-found
+kubectl delete -R -f config-connector/workload/ --ignore-not-found
 
 # Delete KCC manifests
 kubectl delete -f config-connector/ -n ${NAMESPACE} --ignore-not-found

@@ -65,7 +65,7 @@ terraform destroy -auto-approve
 ### Deployment
 ```bash
 # Apply KCC manifests to forge-management namespace on management cluster
-kubectl apply -R -f config-connector/ -n forge-management
+kubectl apply -f config-connector/ -n forge-management
 ```
 
 ### Verification
@@ -75,13 +75,14 @@ kubectl apply -R -f config-connector/ -n forge-management
    ```
 2. **Workload Identity:**
    ```bash
-   # Handled by validate.sh
+   # Handled by validate.sh (which applies config-connector/workload/)
    ./validate.sh
    ```
 
 ### Teardown
 ```bash
-kubectl delete -R -f config-connector/ -n forge-management
+# Delete KCC manifests (non-recursive to avoid workload delete on management cluster)
+kubectl delete -f config-connector/ -n forge-management
 ```
 
 ## Validation Output
