@@ -1,7 +1,7 @@
 {
-  "input_tokens": 25000,
-  "output_tokens": 5000,
-  "estimated_cost_usd": "0.15",
+  "input_tokens": 45000,
+  "output_tokens": 12000,
+  "estimated_cost_usd": "0.18",
   "model": "gemini-2.0-pro-exp",
-  "session_start": "2026-04-11T16:00:00Z"
+  "session_start": "2026-04-12T10:00:00Z"
 }

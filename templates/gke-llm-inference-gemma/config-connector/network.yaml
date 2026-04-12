@@ -34,13 +34,13 @@ metadata:
   annotations:
     cnrm.cloud.google.com/project-id: gca-gke-2025
 spec:
-  ipCidrRange: 10.48.0.0/20
+  ipCidrRange: 10.32.0.0/20
   region: us-central1
   networkRef:
     name: gke-llm-inference-gemma-kcc-vpc
   privateIpGoogleAccess: true
   secondaryIpRange:
     - rangeName: pods
-      ipCidrRange: 10.52.0.0/14
+      ipCidrRange: 10.36.0.0/14
     - rangeName: services
-      ipCidrRange: 10.56.0.0/20
+      ipCidrRange: 10.40.0.0/20

@@ -99,8 +99,8 @@ kubectl apply -f config-connector/ -n forge-management
    # Get credentials for the KCC-created cluster
    gcloud container clusters get-credentials gke-llm-inference-gemma-kcc --region us-central1
    
-   # Install Kueue via Helm
-   helm install kueue oci://us-docker.pkg.dev/gke-release-packages/helm-charts/kueue \
+   # Install Kueue via Helm (using HTTPS repo to avoid OCI auth issues)
+   helm install kueue kueue/kueue --repo https://charts.kueue.sigs.k8s.io \
      --version 0.9.1 --namespace kueue-system --create-namespace
    
    # Apply workload and Kueue manifests

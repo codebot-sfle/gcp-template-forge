@@ -1,25 +1,25 @@
 # Template: GKE LLM Inference — Gemma 2 9B IT
 
 ## Overview
-This template deploys a production-oriented LLM inference workload on GKE using the Gemma 2 9B IT model and the vLLM serving framework. It leverages a multi-GPU configuration (4x L4) for high throughput and low latency.
+This template deploys a production-oriented LLM inference workload on GKE using the Gemma 2 9B IT model and the vLLM serving framework. It leverages a single-GPU configuration (1x L4) for high throughput and low latency.
 
 ## Template Paths
 
 ### Terraform + Helm (`terraform-helm/`)
 - Provisions a dedicated VPC with Slot 2 CIDRs.
-- Deploys a GKE Standard cluster with a GPU node pool (4x NVIDIA L4).
+- Deploys a GKE Standard cluster with a GPU node pool (1x NVIDIA L4).
 - Creates a GCS bucket for model weights.
 - Deploys vLLM via Helm with GCS FUSE mount and Workload Identity.
 
 ### Config Connector (`config-connector/`)
 - Manages GCP resources (`ContainerCluster`, `ContainerNodePool`, `ComputeNetwork`, `StorageBucket`, etc.) as Kubernetes CRs.
-- Uses a dedicated VPC with Slot 3 CIDRs.
+- Provisions a dedicated VPC with Slot 2 CIDRs (non-overlapping subnet/ranges from TF path).
 - Deploys the same LLM inference workload via static Kubernetes manifests.
 
 ## Cluster Details
 - **Type**: GKE Standard
 - **Release channel**: RAPID
-- **Node pools**: gpu-pool (g2-standard-12, spot, 1x NVIDIA L4)
+- **Node pools**: gpu-pool (g2-standard-12, DWS flex-start, 1x NVIDIA L4)
 - **Networking**: VPC-native, Private nodes, Cloud NAT
 
 ## Workload Details
@@ -38,9 +38,9 @@ This template deploys a production-oriented LLM inference workload on GKE using 
 | Time to First Token (p50) | ~300 ms |
 | Next Token Output Token (p50) | ~30 ms |
 | Throughput | ~40 tokens/sec |
-| Node type | g2-standard-12 (spot) |
+| Node type | g2-standard-12 (DWS flex-start) |
 | Estimated node cost | ~$0.23/hr |
-| Estimated cost per 1M tokens | ~$X.XX |
+| Estimated cost per 1M tokens | ~$0.15 (input + output) |
 
 *Note: Benchmarks for Gemma 2 9B IT are based on actual benchmark data on g2-standard-12 (1x L4). The deployment uses `--tensor-parallel-size 1` and has Queued Provisioning (DWS) enabled to handle accelerator availability.*
 
