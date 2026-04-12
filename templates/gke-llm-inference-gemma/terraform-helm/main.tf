@@ -82,10 +82,8 @@ resource "google_storage_bucket" "weights" {
 
 # GKE Cluster
 resource "google_container_cluster" "primary" {
-  name     = var.cluster_name
-  location = var.region
-
-  # MANDATORY for CI to be able to destroy
+  name                = var.cluster_name
+  location            = var.region
   deletion_protection = false
 
   resource_labels = {

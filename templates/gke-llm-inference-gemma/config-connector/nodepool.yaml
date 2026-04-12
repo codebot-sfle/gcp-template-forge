@@ -37,8 +37,8 @@ spec:
       - type: nvidia-l4
         count: 4
     labels:
-      template: gke-llm-inference-gemma
       nvidia.com/gpu: present
+      template: gke-llm-inference-gemma
     taint:
       - key: nvidia.com/gpu
         value: present
