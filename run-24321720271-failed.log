@@ -1,0 +1,782 @@
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	﻿2026-04-13T01:38:57.0175374Z Current runner version: '2.333.1'
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:57.0200614Z ##[group]Runner Image Provisioner
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:57.0201497Z Hosted Compute Agent
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:57.0202409Z Version: 20260213.493
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:57.0203022Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:57.0203768Z Build Date: 2026-02-13T00:28:41Z
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:57.0204408Z Worker ID: {fe7c8da2-a272-489e-af85-f08c9ff6e7a2}
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:57.0205099Z Azure Region: northcentralus
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:57.0205622Z ##[endgroup]
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:57.0207186Z ##[group]Operating System
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:57.0207823Z Ubuntu
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:57.0208228Z 24.04.4
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:57.0208769Z LTS
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:57.0209199Z ##[endgroup]
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:57.0209675Z ##[group]Runner Image
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:57.0210224Z Image: ubuntu-24.04
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:57.0210760Z Version: 20260406.80.1
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:57.0212392Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260406.80/images/ubuntu/Ubuntu2404-Readme.md
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:57.0213915Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260406.80
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:57.0214796Z ##[endgroup]
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:57.0216004Z ##[group]GITHUB_TOKEN Permissions
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:57.0217926Z Contents: write
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:57.0218533Z Metadata: read
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:57.0219078Z PullRequests: write
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:57.0219584Z ##[endgroup]
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:57.0222225Z Secret source: Actions
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:57.0223103Z Prepare workflow directory
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:57.0769544Z Prepare all required actions
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:57.0826231Z Getting action download info
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:57.4320440Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:57.5996029Z Download action repository 'google-github-actions/auth@v2' (SHA:c200f3691d83b41bf9bbd8638997a462592937ed)
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:57.9757924Z Download action repository 'google-github-actions/get-gke-credentials@v2' (SHA:64bc7249bbcf78056bb92f14d3cedc2da193946c)
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.3246201Z Download action repository 'actions/github-script@v7' (SHA:f28e40c7f34bde8b3046d885e986cb6290c5673b)
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.8258842Z Complete job name: Deploy & Test KCC (templates/enterprise-gke)
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.9013615Z ##[group]Run actions/checkout@v4
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.9014495Z with:
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.9014918Z   repository: fkc1e100/gcp-template-forge
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.9015639Z   token: ***
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.9016015Z   ssh-strict: true
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.9016395Z   ssh-user: git
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.9016774Z   persist-credentials: true
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.9017216Z   clean: true
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.9017613Z   sparse-checkout-cone-mode: true
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.9018086Z   fetch-depth: 1
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.9018454Z   fetch-tags: false
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.9018837Z   show-progress: true
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.9019239Z   lfs: false
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.9019607Z   submodules: false
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.9019996Z   set-safe-directory: true
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.9020783Z env:
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.9021151Z   PROJECT_ID: gca-gke-2025
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.9021612Z   KCC_CLUSTER: krmapihost-kcc-instance
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.9022429Z   KCC_REGION: us-central1
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.9022978Z   KCC_NAMESPACE: forge-management
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.9023904Z   WIF_PROVIDER: projects/764460891170/locations/global/workloadIdentityPools/github-actions/providers/github
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.9024997Z   WIF_SERVICE_ACCOUNT: forge-builder@gca-gke-2025.iam.gserviceaccount.com
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.9025716Z   TF_STATE_BUCKET: gke-gca-2025-forge-tf-state
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.9026244Z   USE_GKE_GCLOUD_AUTH_PLUGIN: True
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.9026720Z   TF_VAR_project_id: gca-gke-2025
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.9027366Z   TF_VAR_service_account: forge-builder@gca-gke-2025.iam.gserviceaccount.com
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.9028034Z ##[endgroup]
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.0149993Z Syncing repository: fkc1e100/gcp-template-forge
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.0153067Z ##[group]Getting Git version info
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.0154436Z Working directory is '/home/runner/work/gcp-template-forge/gcp-template-forge'
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.0156780Z [command]/usr/bin/git version
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.0194730Z git version 2.53.0
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.0222428Z ##[endgroup]
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.0238526Z Temporarily overriding HOME='/home/runner/work/_temp/d2889699-b2f4-4c0f-8e19-9f2840165b03' before making global git config changes
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.0240859Z Adding repository directory to the temporary git global config as a safe directory
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.0244687Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gcp-template-forge/gcp-template-forge
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.0281718Z Deleting the contents of '/home/runner/work/gcp-template-forge/gcp-template-forge'
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.0285188Z ##[group]Initializing the repository
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.0290429Z [command]/usr/bin/git init /home/runner/work/gcp-template-forge/gcp-template-forge
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.0367785Z hint: Using 'master' as the name for the initial branch. This default branch name
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.0369747Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.0371233Z hint: to use in all of your new repositories, which will suppress this warning,
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.0372790Z hint: call:
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.0373915Z hint:
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.0374812Z hint: 	git config --global init.defaultBranch <name>
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.0375508Z hint:
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.0376186Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.0377168Z hint: 'development'. The just-created branch can be renamed via this command:
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.0377988Z hint:
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.0378441Z hint: 	git branch -m <name>
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.0379022Z hint:
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.0379729Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.0381074Z Initialized empty Git repository in /home/runner/work/gcp-template-forge/gcp-template-forge/.git/
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.0386767Z [command]/usr/bin/git remote add origin https://github.com/fkc1e100/gcp-template-forge
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.0423174Z ##[endgroup]
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.0423881Z ##[group]Disabling automatic garbage collection
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.0430590Z [command]/usr/bin/git config --local gc.auto 0
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.0464081Z ##[endgroup]
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.0464763Z ##[group]Setting up auth
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.0476732Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.0514503Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.0826296Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.0858347Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.1100191Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.1133790Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.1370134Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.1407574Z ##[endgroup]
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.1408915Z ##[group]Fetching the repository
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.1418383Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +cc2b01a5073351c9753b055e83e7d7de6e97a654:refs/remotes/pull/19/merge
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4252513Z From https://github.com/fkc1e100/gcp-template-forge
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4255315Z  * [new ref]         cc2b01a5073351c9753b055e83e7d7de6e97a654 -> pull/19/merge
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4282871Z ##[endgroup]
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4284636Z ##[group]Determining the checkout info
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4287105Z ##[endgroup]
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4292371Z [command]/usr/bin/git sparse-checkout disable
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4331173Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4360478Z ##[group]Checking out the ref
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4365707Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/19/merge
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4449238Z Note: switching to 'refs/remotes/pull/19/merge'.
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4450464Z 
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4451476Z You are in 'detached HEAD' state. You can look around, make experimental
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4453921Z changes and commit them, and you can discard any commits you make in this
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4455899Z state without impacting any branches by switching back to a branch.
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4457109Z 
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4458048Z If you want to create a new branch to retain commits you create, you may
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4459696Z do so (now or later) by using -c with the switch command. Example:
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4460594Z 
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4460921Z   git switch -c <new-branch-name>
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4461497Z 
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4462021Z Or undo this operation with:
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4462657Z 
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4462945Z   git switch -
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4463341Z 
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4464018Z Turn off this advice by setting config variable advice.detachedHead to false
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4465132Z 
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4466357Z HEAD is now at cc2b01a Merge 45ce06a0257c768c84d5b9abed5feebf658ff544 into 883520a795b3e72a37a8973f58cc18db547215bb
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4470319Z ##[endgroup]
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4498520Z [command]/usr/bin/git log -1 --format=%H
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4521733Z cc2b01a5073351c9753b055e83e7d7de6e97a654
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4971555Z ##[group]Run google-github-actions/auth@v2
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4973045Z with:
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4974999Z   workload_identity_provider: projects/764460891170/locations/global/workloadIdentityPools/github-actions/providers/github
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4977749Z   service_account: forge-builder@gca-gke-2025.iam.gserviceaccount.com
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4979235Z   create_credentials_file: true
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4980188Z   export_environment_variables: true
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4981198Z   universe: googleapis.com
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4982498Z   cleanup_credentials: true
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4983402Z   access_token_lifetime: 3600s
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4984733Z   access_token_scopes: https://www.googleapis.com/auth/cloud-platform
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4986197Z   id_token_include_email: false
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4987038Z env:
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4987689Z   PROJECT_ID: gca-gke-2025
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4988583Z   KCC_CLUSTER: krmapihost-kcc-instance
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4989642Z   KCC_REGION: us-central1
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4990506Z   KCC_NAMESPACE: forge-management
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4992629Z   WIF_PROVIDER: projects/764460891170/locations/global/workloadIdentityPools/github-actions/providers/github
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4995135Z   WIF_SERVICE_ACCOUNT: forge-builder@gca-gke-2025.iam.gserviceaccount.com
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4996701Z   TF_STATE_BUCKET: gke-gca-2025-forge-tf-state
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4997813Z   USE_GKE_GCLOUD_AUTH_PLUGIN: True
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.4998767Z   TF_VAR_project_id: gca-gke-2025
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.5000171Z   TF_VAR_service_account: forge-builder@gca-gke-2025.iam.gserviceaccount.com
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.5001653Z ##[endgroup]
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.7542030Z Created credentials file at "/home/runner/work/gcp-template-forge/gcp-template-forge/gha-creds-7f6cca5093e0638c.json"
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.8706748Z ##[group]Run google-github-actions/get-gke-credentials@v2
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.8707943Z with:
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.8708623Z   cluster_name: krmapihost-kcc-instance
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.8709569Z   location: us-central1
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.8710361Z   project_id: gca-gke-2025
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.8711202Z   use_auth_provider: false
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.8712300Z   use_internal_ip: false
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.8713139Z   use_connect_gateway: false
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.8714265Z   use_dns_based_endpoint: false
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.8715097Z env:
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.8715734Z   PROJECT_ID: gca-gke-2025
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.8716626Z   KCC_CLUSTER: krmapihost-kcc-instance
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.8717592Z   KCC_REGION: us-central1
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.8718428Z   KCC_NAMESPACE: forge-management
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.8720261Z   WIF_PROVIDER: projects/764460891170/locations/global/workloadIdentityPools/github-actions/providers/github
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.8722941Z   WIF_SERVICE_ACCOUNT: forge-builder@gca-gke-2025.iam.gserviceaccount.com
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.8724441Z   TF_STATE_BUCKET: gke-gca-2025-forge-tf-state
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.8725515Z   USE_GKE_GCLOUD_AUTH_PLUGIN: True
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.8726451Z   TF_VAR_project_id: gca-gke-2025
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.8727787Z   TF_VAR_service_account: forge-builder@gca-gke-2025.iam.gserviceaccount.com
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.8730381Z   CLOUDSDK_AUTH_CREDENTIAL_FILE_OVERRIDE: /home/runner/work/gcp-template-forge/gcp-template-forge/gha-creds-7f6cca5093e0638c.json
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.8733914Z   GOOGLE_APPLICATION_CREDENTIALS: /home/runner/work/gcp-template-forge/gcp-template-forge/gha-creds-7f6cca5093e0638c.json
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.8736917Z   GOOGLE_GHA_CREDS_PATH: /home/runner/work/gcp-template-forge/gcp-template-forge/gha-creds-7f6cca5093e0638c.json
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.8738869Z   CLOUDSDK_CORE_PROJECT: gca-gke-2025
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.8739843Z   CLOUDSDK_PROJECT: gca-gke-2025
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.8740760Z   GCLOUD_PROJECT: gca-gke-2025
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.8741639Z   GCP_PROJECT: gca-gke-2025
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.8742744Z   GOOGLE_CLOUD_PROJECT: gca-gke-2025
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.8743666Z ##[endgroup]
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:00.5447338Z Successfully created and exported "KUBECONFIG" at: /home/runner/work/gcp-template-forge/gcp-template-forge/gha-kubeconfig-c43e858a82fc7dc1
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:00.6326878Z ##[group]Run echo "KCC_START=$(date -u +%s)" >> $GITHUB_ENV
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:00.6328331Z [36;1mecho "KCC_START=$(date -u +%s)" >> $GITHUB_ENV[0m
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:00.6329543Z [36;1mkubectl apply -n $KCC_NAMESPACE \[0m
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:00.6330728Z [36;1m  -f templates/enterprise-gke/config-connector/[0m
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:00.6357910Z shell: /usr/bin/bash -e {0}
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:00.6358753Z env:
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:00.6359405Z   PROJECT_ID: gca-gke-2025
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:00.6360280Z   KCC_CLUSTER: krmapihost-kcc-instance
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:00.6361237Z   KCC_REGION: us-central1
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:00.6362369Z   KCC_NAMESPACE: forge-management
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:00.6364162Z   WIF_PROVIDER: projects/764460891170/locations/global/workloadIdentityPools/github-actions/providers/github
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:00.6366401Z   WIF_SERVICE_ACCOUNT: forge-builder@gca-gke-2025.iam.gserviceaccount.com
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:00.6367833Z   TF_STATE_BUCKET: gke-gca-2025-forge-tf-state
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:00.6368914Z   USE_GKE_GCLOUD_AUTH_PLUGIN: True
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:00.6369826Z   TF_VAR_project_id: gca-gke-2025
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:00.6371103Z   TF_VAR_service_account: forge-builder@gca-gke-2025.iam.gserviceaccount.com
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:00.6373820Z   CLOUDSDK_AUTH_CREDENTIAL_FILE_OVERRIDE: /home/runner/work/gcp-template-forge/gcp-template-forge/gha-creds-7f6cca5093e0638c.json
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:00.6376898Z   GOOGLE_APPLICATION_CREDENTIALS: /home/runner/work/gcp-template-forge/gcp-template-forge/gha-creds-7f6cca5093e0638c.json
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:00.6379756Z   GOOGLE_GHA_CREDS_PATH: /home/runner/work/gcp-template-forge/gcp-template-forge/gha-creds-7f6cca5093e0638c.json
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:00.6381627Z   CLOUDSDK_CORE_PROJECT: gca-gke-2025
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:00.6382849Z   CLOUDSDK_PROJECT: gca-gke-2025
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:00.6383731Z   GCLOUD_PROJECT: gca-gke-2025
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:00.6384584Z   GCP_PROJECT: gca-gke-2025
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:00.6385428Z   GOOGLE_CLOUD_PROJECT: gca-gke-2025
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:00.6387103Z   KUBECONFIG: /home/runner/work/gcp-template-forge/gcp-template-forge/gha-kubeconfig-c43e858a82fc7dc1
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:00.6389630Z   KUBE_CONFIG_PATH: /home/runner/work/gcp-template-forge/gcp-template-forge/gha-kubeconfig-c43e858a82fc7dc1
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:00.6391589Z ##[endgroup]
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.2836806Z containercluster.container.cnrm.cloud.google.com/enterprise-gke-kcc configured
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.3508957Z iamserviceaccount.iam.cnrm.cloud.google.com/enterprise-gke-kcc-sa unchanged
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.5475103Z iampolicymember.iam.cnrm.cloud.google.com/enterprise-gke-kcc-wi-binding-v2 created
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.6681562Z computerouter.compute.cnrm.cloud.google.com/enterprise-gke-kcc-router unchanged
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7849079Z computerouternat.compute.cnrm.cloud.google.com/enterprise-gke-kcc-nat unchanged
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.9113994Z computenetwork.compute.cnrm.cloud.google.com/enterprise-gke-kcc-vpc unchanged
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.0300643Z computesubnetwork.compute.cnrm.cloud.google.com/enterprise-gke-kcc-subnet unchanged
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.1021129Z containernodepool.container.cnrm.cloud.google.com/enterprise-gke-kcc-pool unchanged
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.1128140Z ##[group]Run kubectl wait \
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.1128452Z [36;1mkubectl wait \[0m
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.1128676Z [36;1m  -n $KCC_NAMESPACE \[0m
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.1128922Z [36;1m  --for=condition=Ready \[0m
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.1129158Z [36;1m  --all \[0m
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.1129344Z [36;1m  --timeout=600s \[0m
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.1129678Z [36;1m  -f templates/enterprise-gke/config-connector/ || true[0m
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.1130157Z [36;1mecho "kcc_duration=$(( $(date -u +%s) - ${KCC_START} ))" >> $GITHUB_OUTPUT[0m
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.1151016Z shell: /usr/bin/bash -e {0}
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.1151250Z env:
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.1151442Z   PROJECT_ID: gca-gke-2025
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.1151675Z   KCC_CLUSTER: krmapihost-kcc-instance
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.1152211Z   KCC_REGION: us-central1
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.1152434Z   KCC_NAMESPACE: forge-management
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.1152937Z   WIF_PROVIDER: projects/764460891170/locations/global/workloadIdentityPools/github-actions/providers/github
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.1153543Z   WIF_SERVICE_ACCOUNT: forge-builder@gca-gke-2025.iam.gserviceaccount.com
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.1153934Z   TF_STATE_BUCKET: gke-gca-2025-forge-tf-state
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.1154201Z   USE_GKE_GCLOUD_AUTH_PLUGIN: True
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.1154447Z   TF_VAR_project_id: gca-gke-2025
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.1154777Z   TF_VAR_service_account: forge-builder@gca-gke-2025.iam.gserviceaccount.com
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.1155456Z   CLOUDSDK_AUTH_CREDENTIAL_FILE_OVERRIDE: /home/runner/work/gcp-template-forge/gcp-template-forge/gha-creds-7f6cca5093e0638c.json
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.1156309Z   GOOGLE_APPLICATION_CREDENTIALS: /home/runner/work/gcp-template-forge/gcp-template-forge/gha-creds-7f6cca5093e0638c.json
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.1157153Z   GOOGLE_GHA_CREDS_PATH: /home/runner/work/gcp-template-forge/gcp-template-forge/gha-creds-7f6cca5093e0638c.json
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.1157645Z   CLOUDSDK_CORE_PROJECT: gca-gke-2025
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.1157897Z   CLOUDSDK_PROJECT: gca-gke-2025
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.1158133Z   GCLOUD_PROJECT: gca-gke-2025
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.1158356Z   GCP_PROJECT: gca-gke-2025
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.1158583Z   GOOGLE_CLOUD_PROJECT: gca-gke-2025
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.1159032Z   KUBECONFIG: /home/runner/work/gcp-template-forge/gcp-template-forge/gha-kubeconfig-c43e858a82fc7dc1
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.1159707Z   KUBE_CONFIG_PATH: /home/runner/work/gcp-template-forge/gcp-template-forge/gha-kubeconfig-c43e858a82fc7dc1
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.1160178Z   KCC_START: 1776044340
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.1160377Z ##[endgroup]
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0783804Z timed out waiting for the condition on containerclusters/enterprise-gke-kcc
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0785080Z timed out waiting for the condition on iamserviceaccounts/enterprise-gke-kcc-sa
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0786106Z timed out waiting for the condition on iampolicymembers/enterprise-gke-kcc-wi-binding-v2
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0787123Z timed out waiting for the condition on computerouters/enterprise-gke-kcc-router
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0788284Z timed out waiting for the condition on computerouternats/enterprise-gke-kcc-nat
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0790169Z timed out waiting for the condition on computenetworks/enterprise-gke-kcc-vpc
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0791440Z timed out waiting for the condition on computesubnetworks/enterprise-gke-kcc-subnet
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0792571Z timed out waiting for the condition on containernodepools/enterprise-gke-kcc-pool
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0793258Z timed out waiting for the condition on namespaces/enterprise-gke
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0795580Z [configmaps "enterprise-gke-config" not found, deployments.apps "enterprise-gke" not found, horizontalpodautoscalers.autoscaling "enterprise-gke-hpa" not found, networkpolicies.networking.k8s.io "enterprise-gke-netpol" not found, poddisruptionbudgets.policy "enterprise-gke-pdb" not found, services "enterprise-gke" not found, serviceaccounts "enterprise-gke-sa" not found]
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0868453Z ##[group]Run # Check if this template includes a ContainerCluster
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0868965Z [36;1m# Check if this template includes a ContainerCluster[0m
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0869456Z [36;1mCLUSTER_COUNT=$(kubectl get containerclusters.container.cnrm.cloud.google.com \[0m
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0870009Z [36;1m  -n $KCC_NAMESPACE --no-headers 2>/dev/null | wc -l || echo "0")[0m
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0870343Z [36;1m[0m
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0870523Z [36;1mif [ "$CLUSTER_COUNT" -eq 0 ]; then[0m
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0870868Z [36;1m  echo "No ContainerCluster resources — teardown can proceed"[0m
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0871193Z [36;1m  exit 0[0m
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0871359Z [36;1mfi[0m
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0871514Z [36;1m[0m
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0872143Z [36;1mSTATUS=$(kubectl get containerclusters.container.cnrm.cloud.google.com \[0m
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0872568Z [36;1m  -n $KCC_NAMESPACE \[0m
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0872974Z [36;1m  -o jsonpath='{.items[*].status.conditions[?(@.type=="Ready")].status}' \[0m
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0873406Z [36;1m  2>/dev/null | tr ' ' '\n' | grep -c "True" || echo "0")[0m
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0873698Z [36;1m[0m
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0873869Z [36;1mif [ "$STATUS" -gt 0 ]; then[0m
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0874192Z [36;1m  echo "ContainerCluster is Ready — teardown can proceed"[0m
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0874499Z [36;1melse[0m
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0875095Z [36;1m  echo "::notice::ContainerCluster not yet Ready — leaving KCC resources up for next iteration. Resources will be cleaned up on next successful run or PR close."[0m
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0875753Z [36;1m  exit 1[0m
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0875917Z [36;1mfi[0m
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0896421Z shell: /usr/bin/bash -e {0}
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0896648Z env:
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0896820Z   PROJECT_ID: gca-gke-2025
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0897057Z   KCC_CLUSTER: krmapihost-kcc-instance
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0897304Z   KCC_REGION: us-central1
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0897517Z   KCC_NAMESPACE: forge-management
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0897997Z   WIF_PROVIDER: projects/764460891170/locations/global/workloadIdentityPools/github-actions/providers/github
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0898593Z   WIF_SERVICE_ACCOUNT: forge-builder@gca-gke-2025.iam.gserviceaccount.com
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0898982Z   TF_STATE_BUCKET: gke-gca-2025-forge-tf-state
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0899250Z   USE_GKE_GCLOUD_AUTH_PLUGIN: True
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0899479Z   TF_VAR_project_id: gca-gke-2025
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0899810Z   TF_VAR_service_account: forge-builder@gca-gke-2025.iam.gserviceaccount.com
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0900486Z   CLOUDSDK_AUTH_CREDENTIAL_FILE_OVERRIDE: /home/runner/work/gcp-template-forge/gcp-template-forge/gha-creds-7f6cca5093e0638c.json
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0901318Z   GOOGLE_APPLICATION_CREDENTIALS: /home/runner/work/gcp-template-forge/gcp-template-forge/gha-creds-7f6cca5093e0638c.json
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0902443Z   GOOGLE_GHA_CREDS_PATH: /home/runner/work/gcp-template-forge/gcp-template-forge/gha-creds-7f6cca5093e0638c.json
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0902960Z   CLOUDSDK_CORE_PROJECT: gca-gke-2025
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0903207Z   CLOUDSDK_PROJECT: gca-gke-2025
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0903426Z   GCLOUD_PROJECT: gca-gke-2025
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0903642Z   GCP_PROJECT: gca-gke-2025
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0904048Z   GOOGLE_CLOUD_PROJECT: gca-gke-2025
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0904485Z   KUBECONFIG: /home/runner/work/gcp-template-forge/gcp-template-forge/gha-kubeconfig-c43e858a82fc7dc1
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0905160Z   KUBE_CONFIG_PATH: /home/runner/work/gcp-template-forge/gcp-template-forge/gha-kubeconfig-c43e858a82fc7dc1
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0905622Z   KCC_START: 1776044340
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.0905807Z ##[endgroup]
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.5792965Z /home/runner/work/_temp/6d8a51aa-ca50-4ed6-849a-6934b6c33a37.sh: line 15: [: 0
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.5816259Z ##[notice]ContainerCluster not yet Ready — leaving KCC resources up for next iteration. Resources will be cleaned up on next successful run or PR close.
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.5823926Z 0: integer expression expected
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.5826409Z ##[error]Process completed with exit code 1.
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.5922173Z ##[group]Run actions/github-script@v7
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.5922457Z with:
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.5924388Z   script: const template = 'templates/enterprise-gke';
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	const kccResult = 'success';
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	const failed = kccResult === 'failure';
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	const body = [
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	  `### Deploy & Test KCC: \`${template}\``,
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	  `| Step | Result |`,
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	  `|---|---|`,
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	  `| KCC apply + Ready | **${kccResult}** |`,
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	  ...(failed ? ['', `KCC test failed — see [run logs](${runUrl}) for details.`] : []),
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	].join('\n');
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	github.rest.issues.createComment({
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	  issue_number: context.issue.number,
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	  owner: context.repo.owner,
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	  repo: context.repo.repo,
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	  body,
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	});
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.5926556Z   github-token: ***
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.5926741Z   debug: false
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.5926929Z   user-agent: actions/github-script
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.5927172Z   result-encoding: json
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.5927359Z   retries: 0
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.5927585Z   retry-exempt-status-codes: 400,401,403,404,422
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.5927840Z env:
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.5928005Z   PROJECT_ID: gca-gke-2025
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.5928229Z   KCC_CLUSTER: krmapihost-kcc-instance
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.5928474Z   KCC_REGION: us-central1
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.5928681Z   KCC_NAMESPACE: forge-management
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.5929150Z   WIF_PROVIDER: projects/764460891170/locations/global/workloadIdentityPools/github-actions/providers/github
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.5929753Z   WIF_SERVICE_ACCOUNT: forge-builder@gca-gke-2025.iam.gserviceaccount.com
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.5930133Z   TF_STATE_BUCKET: gke-gca-2025-forge-tf-state
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.5930395Z   USE_GKE_GCLOUD_AUTH_PLUGIN: True
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.5930626Z   TF_VAR_project_id: gca-gke-2025
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.5930954Z   TF_VAR_service_account: forge-builder@gca-gke-2025.iam.gserviceaccount.com
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.5931633Z   CLOUDSDK_AUTH_CREDENTIAL_FILE_OVERRIDE: /home/runner/work/gcp-template-forge/gcp-template-forge/gha-creds-7f6cca5093e0638c.json
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.5932796Z   GOOGLE_APPLICATION_CREDENTIALS: /home/runner/work/gcp-template-forge/gcp-template-forge/gha-creds-7f6cca5093e0638c.json
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.5933568Z   GOOGLE_GHA_CREDS_PATH: /home/runner/work/gcp-template-forge/gcp-template-forge/gha-creds-7f6cca5093e0638c.json
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.5934061Z   CLOUDSDK_CORE_PROJECT: gca-gke-2025
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.5934307Z   CLOUDSDK_PROJECT: gca-gke-2025
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.5934535Z   GCLOUD_PROJECT: gca-gke-2025
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.5934744Z   GCP_PROJECT: gca-gke-2025
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.5934960Z   GOOGLE_CLOUD_PROJECT: gca-gke-2025
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.5935399Z   KUBECONFIG: /home/runner/work/gcp-template-forge/gcp-template-forge/gha-kubeconfig-c43e858a82fc7dc1
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.5936068Z   KUBE_CONFIG_PATH: /home/runner/work/gcp-template-forge/gcp-template-forge/gha-kubeconfig-c43e858a82fc7dc1
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.5936534Z   KCC_START: 1776044340
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:05.5936719Z ##[endgroup]
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:06.3181647Z Post job cleanup.
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:06.4045194Z Removed exported credentials at "/home/runner/work/gcp-template-forge/gcp-template-forge/gha-creds-7f6cca5093e0638c.json".
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:06.4149438Z Post job cleanup.
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:06.5149002Z [command]/usr/bin/git version
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:06.5192849Z git version 2.53.0
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:06.5252972Z Temporarily overriding HOME='/home/runner/work/_temp/76892628-9afb-477d-9cac-33c1f731ba6f' before making global git config changes
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:06.5254762Z Adding repository directory to the temporary git global config as a safe directory
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:06.5260546Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gcp-template-forge/gcp-template-forge
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:06.5305530Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:06.5345272Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:06.5611074Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:06.5658737Z http.https://github.com/.extraheader
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:06.5661591Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:06.5693064Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:06.5949224Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:06.5988747Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:06.6376112Z Cleaning up orphan processes
+Deploy & Test KCC (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:49:06.6758301Z ##[warning]Node.js 20 actions are deprecated. The following actions are running on Node.js 20 and may not work as expected: actions/checkout@v4, actions/github-script@v7, google-github-actions/auth@v2, google-github-actions/get-gke-credentials@v2. Actions will be forced to run with Node.js 24 by default starting June 2nd, 2026. Node.js 20 will be removed from the runner on September 16th, 2026. Please check if updated versions of these actions are available that support Node.js 24. To opt into Node.js 24 now, set the FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true environment variable on the runner or in your workflow file. Once Node.js 24 becomes the default, you can temporarily opt out by setting ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	﻿2026-04-13T01:38:58.1261353Z Current runner version: '2.333.1'
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.1283139Z ##[group]Runner Image Provisioner
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.1284038Z Hosted Compute Agent
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.1284609Z Version: 20260213.493
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.1285198Z Commit: 5c115507f6dd24b8de37d8bbe0bb4509d0cc0fa3
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.1285841Z Build Date: 2026-02-13T00:28:41Z
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.1286561Z Worker ID: {7a248bfc-3efe-487d-a10a-f2f8f5dfabde}
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.1287234Z Azure Region: westus3
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.1287788Z ##[endgroup]
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.1289246Z ##[group]Operating System
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.1289850Z Ubuntu
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.1290274Z 24.04.4
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.1290800Z LTS
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.1291318Z ##[endgroup]
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.1291806Z ##[group]Runner Image
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.1292640Z Image: ubuntu-24.04
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.1293136Z Version: 20260406.80.1
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.1294354Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260406.80/images/ubuntu/Ubuntu2404-Readme.md
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.1295779Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260406.80
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.1296673Z ##[endgroup]
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.1297769Z ##[group]GITHUB_TOKEN Permissions
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.1299525Z Contents: write
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.1300135Z Metadata: read
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.1300681Z PullRequests: write
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.1301219Z ##[endgroup]
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.1303516Z Secret source: Actions
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.1304189Z Prepare workflow directory
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.1688903Z Prepare all required actions
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.1726940Z Getting action download info
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.6635743Z Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:58.8157246Z Download action repository 'google-github-actions/auth@v2' (SHA:c200f3691d83b41bf9bbd8638997a462592937ed)
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:38:59.6128957Z Download action repository 'hashicorp/setup-terraform@v3' (SHA:b9cd54a3c349d3f38e8881555d616ced269862dd)
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:00.5340268Z Download action repository 'google-github-actions/get-gke-credentials@v2' (SHA:64bc7249bbcf78056bb92f14d3cedc2da193946c)
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:01.3446219Z Download action repository 'azure/setup-helm@v4' (SHA:1a275c3b69536ee54be43f2070a358922e12c8d4)
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:02.0932761Z Download action repository 'actions/github-script@v7' (SHA:f28e40c7f34bde8b3046d885e986cb6290c5673b)
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:02.9666974Z Complete job name: Deploy & Test TF+Helm (templates/enterprise-gke)
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.0321169Z ##[group]Run actions/checkout@v4
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.0321725Z with:
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.0321943Z   repository: fkc1e100/gcp-template-forge
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.0322345Z   token: ***
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.0322806Z   ssh-strict: true
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.0322995Z   ssh-user: git
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.0323180Z   persist-credentials: true
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.0323405Z   clean: true
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.0323597Z   sparse-checkout-cone-mode: true
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.0323848Z   fetch-depth: 1
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.0324064Z   fetch-tags: false
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.0324246Z   show-progress: true
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.0324439Z   lfs: false
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.0324603Z   submodules: false
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.0324789Z   set-safe-directory: true
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.0325241Z env:
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.0325420Z   PROJECT_ID: gca-gke-2025
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.0325641Z   KCC_CLUSTER: krmapihost-kcc-instance
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.0325890Z   KCC_REGION: us-central1
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.0326129Z   KCC_NAMESPACE: forge-management
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.0326610Z   WIF_PROVIDER: projects/764460891170/locations/global/workloadIdentityPools/github-actions/providers/github
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.0327219Z   WIF_SERVICE_ACCOUNT: forge-builder@gca-gke-2025.iam.gserviceaccount.com
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.0327611Z   TF_STATE_BUCKET: gke-gca-2025-forge-tf-state
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.0327887Z   USE_GKE_GCLOUD_AUTH_PLUGIN: True
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.0328127Z   TF_VAR_project_id: gca-gke-2025
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.0328459Z   TF_VAR_service_account: forge-builder@gca-gke-2025.iam.gserviceaccount.com
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.0329044Z ##[endgroup]
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.1376051Z Syncing repository: fkc1e100/gcp-template-forge
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.1377309Z ##[group]Getting Git version info
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.1377764Z Working directory is '/home/runner/work/gcp-template-forge/gcp-template-forge'
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.1378370Z [command]/usr/bin/git version
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.1421144Z git version 2.53.0
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.1446509Z ##[endgroup]
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.1459760Z Temporarily overriding HOME='/home/runner/work/_temp/c3a6c54f-d655-4a43-bbfa-8827c54f6e74' before making global git config changes
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.1460574Z Adding repository directory to the temporary git global config as a safe directory
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.1465357Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gcp-template-forge/gcp-template-forge
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.1495550Z Deleting the contents of '/home/runner/work/gcp-template-forge/gcp-template-forge'
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.1498820Z ##[group]Initializing the repository
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.1503622Z [command]/usr/bin/git init /home/runner/work/gcp-template-forge/gcp-template-forge
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.1593792Z hint: Using 'master' as the name for the initial branch. This default branch name
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.1594742Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.1595635Z hint: to use in all of your new repositories, which will suppress this warning,
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.1596380Z hint: call:
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.1596693Z hint:
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.1597156Z hint: 	git config --global init.defaultBranch <name>
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.1597707Z hint:
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.1598265Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.1599200Z hint: 'development'. The just-created branch can be renamed via this command:
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.1599891Z hint:
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.1600217Z hint: 	git branch -m <name>
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.1600619Z hint:
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.1601209Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.1602334Z Initialized empty Git repository in /home/runner/work/gcp-template-forge/gcp-template-forge/.git/
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.1640776Z [command]/usr/bin/git remote add origin https://github.com/fkc1e100/gcp-template-forge
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.1642381Z ##[endgroup]
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.1643282Z ##[group]Disabling automatic garbage collection
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.1645982Z [command]/usr/bin/git config --local gc.auto 0
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.1673360Z ##[endgroup]
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.1673982Z ##[group]Setting up auth
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.1680548Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.1709484Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.2018387Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.2051481Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.2299386Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.2340282Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.2558576Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.2589770Z ##[endgroup]
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.2590228Z ##[group]Fetching the repository
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.2598290Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +cc2b01a5073351c9753b055e83e7d7de6e97a654:refs/remotes/pull/19/merge
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7473854Z From https://github.com/fkc1e100/gcp-template-forge
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7501059Z  * [new ref]         cc2b01a5073351c9753b055e83e7d7de6e97a654 -> pull/19/merge
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7503057Z ##[endgroup]
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7503680Z ##[group]Determining the checkout info
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7505268Z ##[endgroup]
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7510700Z [command]/usr/bin/git sparse-checkout disable
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7548358Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7572901Z ##[group]Checking out the ref
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7577240Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/19/merge
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7653174Z Note: switching to 'refs/remotes/pull/19/merge'.
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7653619Z 
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7654012Z You are in 'detached HEAD' state. You can look around, make experimental
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7654860Z changes and commit them, and you can discard any commits you make in this
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7655662Z state without impacting any branches by switching back to a branch.
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7656153Z 
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7656466Z If you want to create a new branch to retain commits you create, you may
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7657202Z do so (now or later) by using -c with the switch command. Example:
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7657634Z 
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7657813Z   git switch -c <new-branch-name>
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7658013Z 
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7658114Z Or undo this operation with:
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7658279Z 
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7658364Z   git switch -
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7658509Z 
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7658721Z Turn off this advice by setting config variable advice.detachedHead to false
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7659019Z 
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7659373Z HEAD is now at cc2b01a Merge 45ce06a0257c768c84d5b9abed5feebf658ff544 into 883520a795b3e72a37a8973f58cc18db547215bb
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7661801Z ##[endgroup]
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7694491Z [command]/usr/bin/git log -1 --format=%H
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7716149Z cc2b01a5073351c9753b055e83e7d7de6e97a654
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7945892Z ##[group]Run google-github-actions/auth@v2
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7946195Z with:
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7946665Z   workload_identity_provider: projects/764460891170/locations/global/workloadIdentityPools/github-actions/providers/github
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7947322Z   service_account: forge-builder@gca-gke-2025.iam.gserviceaccount.com
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7947671Z   create_credentials_file: true
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7947912Z   export_environment_variables: true
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7948162Z   universe: googleapis.com
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7948370Z   cleanup_credentials: true
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7948592Z   access_token_lifetime: 3600s
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7948921Z   access_token_scopes: https://www.googleapis.com/auth/cloud-platform
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7949273Z   id_token_include_email: false
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7949476Z env:
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7949644Z   PROJECT_ID: gca-gke-2025
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7949865Z   KCC_CLUSTER: krmapihost-kcc-instance
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7950144Z   KCC_REGION: us-central1
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7950360Z   KCC_NAMESPACE: forge-management
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7950829Z   WIF_PROVIDER: projects/764460891170/locations/global/workloadIdentityPools/github-actions/providers/github
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7951416Z   WIF_SERVICE_ACCOUNT: forge-builder@gca-gke-2025.iam.gserviceaccount.com
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7951797Z   TF_STATE_BUCKET: gke-gca-2025-forge-tf-state
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7952064Z   USE_GKE_GCLOUD_AUTH_PLUGIN: True
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7952292Z   TF_VAR_project_id: gca-gke-2025
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7952800Z   TF_VAR_service_account: forge-builder@gca-gke-2025.iam.gserviceaccount.com
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:03.7953145Z ##[endgroup]
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.1377038Z Created credentials file at "/home/runner/work/gcp-template-forge/gcp-template-forge/gha-creds-11f237949e09642e.json"
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.3998581Z ##[group]Run hashicorp/setup-terraform@v3
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.3998895Z with:
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.3999128Z   cli_config_credentials_hostname: app.terraform.io
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.3999597Z   terraform_version: latest
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.3999812Z   terraform_wrapper: true
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.4000018Z env:
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.4000190Z   PROJECT_ID: gca-gke-2025
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.4000416Z   KCC_CLUSTER: krmapihost-kcc-instance
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.4000668Z   KCC_REGION: us-central1
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.4000881Z   KCC_NAMESPACE: forge-management
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.4001362Z   WIF_PROVIDER: projects/764460891170/locations/global/workloadIdentityPools/github-actions/providers/github
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.4001965Z   WIF_SERVICE_ACCOUNT: forge-builder@gca-gke-2025.iam.gserviceaccount.com
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.4002353Z   TF_STATE_BUCKET: gke-gca-2025-forge-tf-state
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.4002814Z   USE_GKE_GCLOUD_AUTH_PLUGIN: True
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.4003059Z   TF_VAR_project_id: gca-gke-2025
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.4003454Z   TF_VAR_service_account: forge-builder@gca-gke-2025.iam.gserviceaccount.com
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.4004134Z   CLOUDSDK_AUTH_CREDENTIAL_FILE_OVERRIDE: /home/runner/work/gcp-template-forge/gcp-template-forge/gha-creds-11f237949e09642e.json
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.4004986Z   GOOGLE_APPLICATION_CREDENTIALS: /home/runner/work/gcp-template-forge/gcp-template-forge/gha-creds-11f237949e09642e.json
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.4005750Z   GOOGLE_GHA_CREDS_PATH: /home/runner/work/gcp-template-forge/gcp-template-forge/gha-creds-11f237949e09642e.json
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.4006253Z   CLOUDSDK_CORE_PROJECT: gca-gke-2025
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.4006500Z   CLOUDSDK_PROJECT: gca-gke-2025
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.4006734Z   GCLOUD_PROJECT: gca-gke-2025
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.4006958Z   GCP_PROJECT: gca-gke-2025
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.4007174Z   GOOGLE_CLOUD_PROJECT: gca-gke-2025
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:04.4007419Z ##[endgroup]
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:05.0237303Z [command]/usr/bin/unzip -o -q /home/runner/work/_temp/c6ff5978-febf-4960-bb00-564f96c1c7c1
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:05.7224604Z ##[group]Run gsutil rm "gs://${TF_STATE_BUCKET}/templates/enterprise-gke/terraform-helm/default.tflock" \
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:05.7225421Z [36;1mgsutil rm "gs://${TF_STATE_BUCKET}/templates/enterprise-gke/terraform-helm/default.tflock" \[0m
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:05.7226080Z [36;1m  2>/dev/null && echo "Stale state lock removed" || echo "No stale lock present"[0m
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:05.7251539Z shell: /usr/bin/bash -e {0}
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:05.7251871Z env:
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:05.7252110Z   PROJECT_ID: gca-gke-2025
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:05.7252685Z   KCC_CLUSTER: krmapihost-kcc-instance
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:05.7253009Z   KCC_REGION: us-central1
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:05.7253273Z   KCC_NAMESPACE: forge-management
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:05.7253795Z   WIF_PROVIDER: projects/764460891170/locations/global/workloadIdentityPools/github-actions/providers/github
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:05.7254428Z   WIF_SERVICE_ACCOUNT: forge-builder@gca-gke-2025.iam.gserviceaccount.com
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:05.7254912Z   TF_STATE_BUCKET: gke-gca-2025-forge-tf-state
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:05.7255232Z   USE_GKE_GCLOUD_AUTH_PLUGIN: True
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:05.7255505Z   TF_VAR_project_id: gca-gke-2025
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:05.7255885Z   TF_VAR_service_account: forge-builder@gca-gke-2025.iam.gserviceaccount.com
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:05.7256616Z   CLOUDSDK_AUTH_CREDENTIAL_FILE_OVERRIDE: /home/runner/work/gcp-template-forge/gcp-template-forge/gha-creds-11f237949e09642e.json
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:05.7257491Z   GOOGLE_APPLICATION_CREDENTIALS: /home/runner/work/gcp-template-forge/gcp-template-forge/gha-creds-11f237949e09642e.json
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:05.7258297Z   GOOGLE_GHA_CREDS_PATH: /home/runner/work/gcp-template-forge/gcp-template-forge/gha-creds-11f237949e09642e.json
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:05.7258835Z   CLOUDSDK_CORE_PROJECT: gca-gke-2025
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:05.7259125Z   CLOUDSDK_PROJECT: gca-gke-2025
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:05.7259403Z   GCLOUD_PROJECT: gca-gke-2025
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:05.7259671Z   GCP_PROJECT: gca-gke-2025
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:05.7259926Z   GOOGLE_CLOUD_PROJECT: gca-gke-2025
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:05.7260338Z   TERRAFORM_CLI_PATH: /home/runner/work/_temp/fffc9f9a-b8cb-4c57-9bf7-ed3850d3d9ff
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:05.7260744Z ##[endgroup]
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:12.6630303Z No stale lock present
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:12.7173909Z ##[group]Run echo "TF_START=$(date -u +%s)" >> $GITHUB_ENV
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:12.7174366Z [36;1mecho "TF_START=$(date -u +%s)" >> $GITHUB_ENV[0m
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:12.7174704Z [36;1mterraform init \[0m
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:12.7175004Z [36;1m  -backend-config="bucket=$TF_STATE_BUCKET" \[0m
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:12.7175448Z [36;1m  -backend-config="prefix=templates/enterprise-gke/terraform-helm"[0m
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:12.7175891Z [36;1mterraform apply -auto-approve -input=false[0m
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:12.7196463Z shell: /usr/bin/bash -e {0}
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:12.7196738Z env:
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:12.7196962Z   PROJECT_ID: gca-gke-2025
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:12.7197233Z   KCC_CLUSTER: krmapihost-kcc-instance
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:12.7197528Z   KCC_REGION: us-central1
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:12.7197783Z   KCC_NAMESPACE: forge-management
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:12.7198270Z   WIF_PROVIDER: projects/764460891170/locations/global/workloadIdentityPools/github-actions/providers/github
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:12.7198918Z   WIF_SERVICE_ACCOUNT: forge-builder@gca-gke-2025.iam.gserviceaccount.com
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:12.7199322Z   TF_STATE_BUCKET: gke-gca-2025-forge-tf-state
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:12.7199621Z   USE_GKE_GCLOUD_AUTH_PLUGIN: True
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:12.7199894Z   TF_VAR_project_id: gca-gke-2025
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:12.7200241Z   TF_VAR_service_account: forge-builder@gca-gke-2025.iam.gserviceaccount.com
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:12.7200927Z   CLOUDSDK_AUTH_CREDENTIAL_FILE_OVERRIDE: /home/runner/work/gcp-template-forge/gcp-template-forge/gha-creds-11f237949e09642e.json
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:12.7201768Z   GOOGLE_APPLICATION_CREDENTIALS: /home/runner/work/gcp-template-forge/gcp-template-forge/gha-creds-11f237949e09642e.json
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:12.7202866Z   GOOGLE_GHA_CREDS_PATH: /home/runner/work/gcp-template-forge/gcp-template-forge/gha-creds-11f237949e09642e.json
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:12.7203409Z   CLOUDSDK_CORE_PROJECT: gca-gke-2025
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:12.7203682Z   CLOUDSDK_PROJECT: gca-gke-2025
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:12.7203946Z   GCLOUD_PROJECT: gca-gke-2025
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:12.7204215Z   GCP_PROJECT: gca-gke-2025
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:12.7204462Z   GOOGLE_CLOUD_PROJECT: gca-gke-2025
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:12.7204841Z   TERRAFORM_CLI_PATH: /home/runner/work/_temp/fffc9f9a-b8cb-4c57-9bf7-ed3850d3d9ff
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:12.7205246Z ##[endgroup]
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:12.8803340Z [0m[1mInitializing the backend...[0m
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:13.4361314Z [0m[32m
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:13.4362855Z Successfully configured the backend "gcs"! Terraform will automatically
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:13.4363792Z use this backend unless the backend configuration changes.[0m
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:13.8019541Z [0m[1mInitializing provider plugins...[0m
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:13.8020346Z - Finding hashicorp/helm versions matching "~> 2.10"...
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:13.9063255Z - Finding hashicorp/google versions matching "~> 7.0"...
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:13.9440610Z - Finding hashicorp/google-beta versions matching "~> 7.0"...
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:14.1291480Z - Installing hashicorp/google-beta v7.27.0...
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:15.3127610Z - Installed hashicorp/google-beta v7.27.0 (signed by HashiCorp)
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:15.4466021Z - Installing hashicorp/helm v2.17.0...
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:16.0350255Z - Installed hashicorp/helm v2.17.0 (signed by HashiCorp)
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:16.1821768Z - Installing hashicorp/google v7.27.0...
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:17.3610303Z - Installed hashicorp/google v7.27.0 (signed by HashiCorp)
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:17.3611763Z Terraform has created a lock file [1m.terraform.lock.hcl[0m to record the provider
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:17.3614047Z selections it made above. Include this file in your version control repository
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:17.3615223Z so that Terraform can guarantee to make the same selections by default when
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:17.3616225Z you run "terraform init" in the future.[0m
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:17.3616647Z 
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:17.3617193Z [0m[1m[32mTerraform has been successfully initialized![0m[32m[0m
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:17.3617939Z [0m[32m
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:17.3618786Z You may now begin working with Terraform. Try running "terraform plan" to see
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:17.3619816Z any changes that are required for your infrastructure. All Terraform commands
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:17.3620435Z should now work.
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:17.3620625Z 
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:17.3620921Z If you ever set or change modules or backend configuration for Terraform,
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:17.3621817Z rerun this command to reinitialize your working directory. If you forget, other
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:17.3623095Z commands will detect it and remind you to do so if necessary.[0m
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6474870Z [31m╷[0m[0m
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6475552Z [31m│[0m [0m[1m[31mError: [0m[0m[1mError acquiring the state lock[0m
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6476215Z [31m│[0m [0m
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6476671Z [31m│[0m [0m[0mError message: writing
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6477625Z [31m│[0m [0m"gs://gke-gca-2025-forge-tf-state/templates/enterprise-gke/terraform-helm/default.tflock"
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6478468Z [31m│[0m [0mfailed: googleapi: Error 412: At least one of the pre-conditions you
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6479015Z [31m│[0m [0mspecified did not hold., conditionNotMet
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6479346Z [31m│[0m [0mLock Info:
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6479608Z [31m│[0m [0m  ID:        1776041365774396
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6480199Z [31m│[0m [0m  Path:      gs://gke-gca-2025-forge-tf-state/templates/enterprise-gke/terraform-helm/default.tflock
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6480784Z [31m│[0m [0m  Operation: OperationTypeApply
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6481120Z [31m│[0m [0m  Who:       runner@runnervm35a4x
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6481426Z [31m│[0m [0m  Version:   1.14.8
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6494570Z [31m│[0m [0m  Created:   2026-04-13 00:49:25.676840804 +0000 UTC
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6495226Z [31m│[0m [0m  Info:      
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6495617Z [31m│[0m [0m
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6495935Z [31m│[0m [0m
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6496577Z [31m│[0m [0mTerraform acquires a state lock to protect the state from being written
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6497622Z [31m│[0m [0mby multiple users at the same time. Please resolve the issue above and try
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6498655Z [31m│[0m [0magain. For most commands, you can disable locking with the "-lock=false"
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6499452Z [31m│[0m [0mflag, but this is not recommended.
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6499987Z [31m╵[0m[0m
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6536784Z ##[error]Terraform exited with code 1.
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6567341Z ##[error]Process completed with exit code 1.
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6651176Z ##[group]Run # Destroy if TF apply itself failed (clean up partial state)
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6651705Z [36;1m# Destroy if TF apply itself failed (clean up partial state)[0m
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6652158Z [36;1m# OR if all downstream verification passed (normal successful cleanup)[0m
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6652915Z [36;1m# Leave cluster up if TF apply succeeded but a downstream step failed —[0m
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6653400Z [36;1m# next push will terraform apply (no-op) and re-run the failing step.[0m
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6653763Z [36;1mTF_APPLY="failure"[0m
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6653993Z [36;1mTF_VERIFY="skipped"[0m
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6654226Z [36;1mHELM="skipped"[0m
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6654413Z [36;1m[0m
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6654603Z [36;1mif [ "$TF_APPLY" = "failure" ]; then[0m
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6654912Z [36;1m  echo "should_destroy=true"  >> $GITHUB_OUTPUT[0m
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6655320Z [36;1m  echo "Reason: TF apply failed — destroying partial state"[0m
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6655840Z [36;1melif [ "$TF_VERIFY" = "success" ] && { [ "$HELM" = "success" ] || [ "$HELM" = "skipped" ]; }; then[0m
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6656291Z [36;1m  echo "should_destroy=true"  >> $GITHUB_OUTPUT[0m
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6656690Z [36;1m  echo "Reason: All verification passed — performing normal teardown"[0m
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6657050Z [36;1melse[0m
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6657272Z [36;1m  echo "should_destroy=false" >> $GITHUB_OUTPUT[0m
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6658152Z [36;1m  echo "::notice::Cluster left running — TF apply succeeded but a downstream step failed. Next push will skip provisioning and re-run the failing step. Cluster will be destroyed on next successful run or PR close."[0m
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6659171Z [36;1mfi[0m
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6679554Z shell: /usr/bin/bash -e {0}
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6679785Z env:
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6679966Z   PROJECT_ID: gca-gke-2025
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6680201Z   KCC_CLUSTER: krmapihost-kcc-instance
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6680472Z   KCC_REGION: us-central1
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6680695Z   KCC_NAMESPACE: forge-management
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6681172Z   WIF_PROVIDER: projects/764460891170/locations/global/workloadIdentityPools/github-actions/providers/github
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6681780Z   WIF_SERVICE_ACCOUNT: forge-builder@gca-gke-2025.iam.gserviceaccount.com
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6682186Z   TF_STATE_BUCKET: gke-gca-2025-forge-tf-state
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6682712Z   USE_GKE_GCLOUD_AUTH_PLUGIN: True
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6682955Z   TF_VAR_project_id: gca-gke-2025
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6683296Z   TF_VAR_service_account: forge-builder@gca-gke-2025.iam.gserviceaccount.com
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6683988Z   CLOUDSDK_AUTH_CREDENTIAL_FILE_OVERRIDE: /home/runner/work/gcp-template-forge/gcp-template-forge/gha-creds-11f237949e09642e.json
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6684824Z   GOOGLE_APPLICATION_CREDENTIALS: /home/runner/work/gcp-template-forge/gcp-template-forge/gha-creds-11f237949e09642e.json
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6685588Z   GOOGLE_GHA_CREDS_PATH: /home/runner/work/gcp-template-forge/gcp-template-forge/gha-creds-11f237949e09642e.json
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6686088Z   CLOUDSDK_CORE_PROJECT: gca-gke-2025
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6686338Z   CLOUDSDK_PROJECT: gca-gke-2025
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6686563Z   GCLOUD_PROJECT: gca-gke-2025
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6686784Z   GCP_PROJECT: gca-gke-2025
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6687005Z   GOOGLE_CLOUD_PROJECT: gca-gke-2025
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6687363Z   TERRAFORM_CLI_PATH: /home/runner/work/_temp/fffc9f9a-b8cb-4c57-9bf7-ed3850d3d9ff
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6687737Z   TF_START: 1776044352
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6687983Z ##[endgroup]
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6730436Z Reason: TF apply failed — destroying partial state
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6801972Z ##[group]Run actions/github-script@v7
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6802242Z with:
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6804753Z   script: const template = 'templates/enterprise-gke';
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	const tfResult = 'skipped';
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	const helmResult = 'skipped';
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	const failed = [tfResult, helmResult].some(r => r === 'failure');
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	const body = [
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	  `### Deploy & Test TF+Helm: \`${template}\``,
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	  `| Step | Result |`,
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	  `|---|---|`,
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	  `| Terraform apply + cluster verify | **${tfResult}** |`,
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	  `| Helm deploy + verify | **${helmResult}** |`,
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	  ...(failed ? ['', `TF+Helm test failed — see [run logs](${runUrl}) for details.`] : []),
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	].join('\n');
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	github.rest.issues.createComment({
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	  issue_number: context.issue.number,
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	  owner: context.repo.owner,
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	  repo: context.repo.repo,
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	  body,
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	});
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6807254Z   github-token: ***
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6807445Z   debug: false
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6807666Z   user-agent: actions/github-script
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6807914Z   result-encoding: json
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6808110Z   retries: 0
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6808314Z   retry-exempt-status-codes: 400,401,403,404,422
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6808569Z env:
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6808736Z   PROJECT_ID: gca-gke-2025
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6808964Z   KCC_CLUSTER: krmapihost-kcc-instance
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6809200Z   KCC_REGION: us-central1
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6809422Z   KCC_NAMESPACE: forge-management
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6809897Z   WIF_PROVIDER: projects/764460891170/locations/global/workloadIdentityPools/github-actions/providers/github
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6810506Z   WIF_SERVICE_ACCOUNT: forge-builder@gca-gke-2025.iam.gserviceaccount.com
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6810883Z   TF_STATE_BUCKET: gke-gca-2025-forge-tf-state
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6811149Z   USE_GKE_GCLOUD_AUTH_PLUGIN: True
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6811383Z   TF_VAR_project_id: gca-gke-2025
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6811710Z   TF_VAR_service_account: forge-builder@gca-gke-2025.iam.gserviceaccount.com
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6812672Z   CLOUDSDK_AUTH_CREDENTIAL_FILE_OVERRIDE: /home/runner/work/gcp-template-forge/gcp-template-forge/gha-creds-11f237949e09642e.json
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6813516Z   GOOGLE_APPLICATION_CREDENTIALS: /home/runner/work/gcp-template-forge/gcp-template-forge/gha-creds-11f237949e09642e.json
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6814279Z   GOOGLE_GHA_CREDS_PATH: /home/runner/work/gcp-template-forge/gcp-template-forge/gha-creds-11f237949e09642e.json
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6814773Z   CLOUDSDK_CORE_PROJECT: gca-gke-2025
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6815025Z   CLOUDSDK_PROJECT: gca-gke-2025
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6815256Z   GCLOUD_PROJECT: gca-gke-2025
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6815472Z   GCP_PROJECT: gca-gke-2025
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6815692Z   GOOGLE_CLOUD_PROJECT: gca-gke-2025
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6816052Z   TERRAFORM_CLI_PATH: /home/runner/work/_temp/fffc9f9a-b8cb-4c57-9bf7-ed3850d3d9ff
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6816420Z   TF_START: 1776044352
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:18.6816607Z ##[endgroup]
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:19.5115717Z Post job cleanup.
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:19.5921449Z Removed exported credentials at "/home/runner/work/gcp-template-forge/gcp-template-forge/gha-creds-11f237949e09642e.json".
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:19.6060979Z Post job cleanup.
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:19.7062203Z [command]/usr/bin/git version
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:19.7098639Z git version 2.53.0
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:19.7149250Z Temporarily overriding HOME='/home/runner/work/_temp/94fc2b97-9472-4699-b132-dbcabf08ca86' before making global git config changes
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:19.7150007Z Adding repository directory to the temporary git global config as a safe directory
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:19.7155180Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/gcp-template-forge/gcp-template-forge
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:19.7187434Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:19.7218031Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:19.7433737Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:19.7454310Z http.https://github.com/.extraheader
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:19.7466605Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:19.7501408Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:19.7713769Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:19.7742213Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:19.8071206Z Cleaning up orphan processes
+Deploy & Test TF+Helm (templates/enterprise-gke)	UNKNOWN STEP	2026-04-13T01:39:19.8346189Z ##[warning]Node.js 20 actions are deprecated. The following actions are running on Node.js 20 and may not work as expected: actions/checkout@v4, actions/github-script@v7, google-github-actions/auth@v2, hashicorp/setup-terraform@v3. Actions will be forced to run with Node.js 24 by default starting June 2nd, 2026. Node.js 20 will be removed from the runner on September 16th, 2026. Please check if updated versions of these actions are available that support Node.js 24. To opt into Node.js 24 now, set the FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true environment variable on the runner or in your workflow file. Once Node.js 24 becomes the default, you can temporarily opt out by setting ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
